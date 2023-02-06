@@ -9,4 +9,12 @@ const router = Router();
 
 router.get('/', controller.getUsers);
 
+router.get('/:id', controller.getUserById);
+
+router.post('/', controller.addUsers);
+
+router.delete('/:id', controller.removeUsers);
+
+router.put('/:id', controller.putUsers);
+
 module.exports = router;
